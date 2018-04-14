@@ -3,4 +3,10 @@
 
 {% block content %}
 <h1>Homepage.</h1>
+<ul>
+  {% for page in pages %}
+    <li>{{ page.content }}</li>
+  {% endfor %}
+</ul>
+
 {% endblock %}

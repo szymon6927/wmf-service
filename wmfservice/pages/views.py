@@ -1,9 +1,13 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, ListView
+
+from .models import Page
 
 
-class HomePageView(TemplateView):
+class HomePageView(ListView):
+    model = Page
+    context_object_name = 'pages'
     template_name = 'home.html'
 
 
