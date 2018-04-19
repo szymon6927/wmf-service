@@ -138,6 +138,7 @@ INSTALLED_APPS = (
     'djangocms_snippet',
     'djangocms_googlemap',
     'djangocms_video',
+    'light_gallery',
     'wmfcms'
 )
 
