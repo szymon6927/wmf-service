@@ -139,6 +139,7 @@ INSTALLED_APPS = (
     'djangocms_googlemap',
     'djangocms_video',
     'light_gallery',
+    'djangocms_forms',
     'wmfcms'
 )
 
@@ -197,6 +198,8 @@ MIGRATION_MODULES = {
 DJANGOCMS_PICTURE_TEMPLATES = [
     ('card', 'Card Background')
 ]
+
+DJANGOCMS_FORMS_WIDGET_CSS_CLASSES = {'__all__': ('form-control', ) }
 
 
 THUMBNAIL_PROCESSORS = (
