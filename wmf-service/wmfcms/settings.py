@@ -194,6 +194,11 @@ MIGRATION_MODULES = {
     
 }
 
+DJANGOCMS_PICTURE_TEMPLATES = [
+    ('card', 'Card Background')
+]
+
+
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',
     'easy_thumbnails.processors.autocrop',

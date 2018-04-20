@@ -10,6 +10,10 @@
     color: #222 !important;
 }
 
+img {
+    width: 100%;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
