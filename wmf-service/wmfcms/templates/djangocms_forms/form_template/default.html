@@ -9,7 +9,7 @@
 		</div>
 	{% endif %}
 	<div class="row">
-		<div class="col-md-8 offset-md-2 col-sm-12 col-xs-12">
+		<div class="col-md-12 col-sm-12 col-xs-12">
 			<form action="{{ form.submission_url }}" method="POST" {% if form.is_multipart %} enctype="multipart/form-data"{% endif %}>
 				<div class="form-errors alert alert-danger" style="display:none;"></div>
 				{% for field in form.visible_fields %}
