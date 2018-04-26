@@ -4,7 +4,13 @@
 
 .navbar-nav li {
     padding: 0 15px;
+    transition: 0.25s;
 }
+
+/* .navbar li:hover {
+    background: #9d775a;
+    border-radius: 10px;
+} */
 
 .dropdown-menu li a {
     color: #222 !important;
@@ -59,4 +65,69 @@ footer {
 
 .product-card:hover {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+
+.product-title {
+    border-bottom: 1px solid #222;
+    padding-bottom: 10px;
+    margin-bottom: 2.5rem;
+}
+
+.gallery-wrapper {
+    padding: 20px 10px;
+    background: #fafafa;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.badge-primary {
+    background-color: #513d30;
+}
+
+.badge-success, .badge-danger {
+    font-size: initial;
+    padding: 0.6rem;
+}
+
+.badge-primary {
+    padding: 1rem;
+    font-size: 19px;
+}
+
+.sell-info {
+    padding: 20px 10px;
+    background: #F3F2F0;
+    border-radius: 5px;
+}
+
+.product-price p {
+    font-size: 22px;
+}
+
+.product-price span {
+    background: #3E1E0F;
+    padding: 5px 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.product-contact i {
+    padding-right: 10px;
+    font-size: 23px;
+}
+
+.product-contact a {
+    color: #222;
+    text-decoration: none;
+}
+
+.product-contact a:hover {
+    font-weight: bold;
+}
+
+.important-info {
+    font-size: 13px;
+    color: #222;
 }
