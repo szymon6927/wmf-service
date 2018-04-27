@@ -18,8 +18,8 @@
 				<div class="product-availability mb-2"><span class="badge badge-success">Produkt dostępny</span></div>
 				<div class="sell-info mb-3 shadow">
 					<div class="product-price mb-1">
-						<p class="price font-weight-bold">Cena: <span>6999 zł</span></p>
-					</div>
+							<p class="price font-weight-bold">Cena: <span>{% placeholder "product_price" or %}6500 zł{% endplaceholder %} </span></p>
+					</div> 
 					
 					<div class="product-contact">
 						<p class="font-weight-bold mb-2">Kontakt:</p>
@@ -44,8 +44,8 @@
 			</div>
 
       <div class="col-sm-12">
-				<h3 class="mt-4 product-title">Galeria</h3>
-				{% placeholder "product_gallery" %}
+			<h3 class="mt-4 product-title">Galeria</h3>
+			{% placeholder "product_gallery" %}
       </div>
     </div>
 {% endblock content %}

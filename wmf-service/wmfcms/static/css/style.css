@@ -131,3 +131,12 @@ footer {
     font-size: 13px;
     color: #222;
 }
+
+.textarea textarea {
+    height: 150px;
+}
+
+.form-control:focus {
+    border-color: #513d30;
+    box-shadow: 0 0 0 0.1rem rgba(81, 61, 48, 0.2);
+}
