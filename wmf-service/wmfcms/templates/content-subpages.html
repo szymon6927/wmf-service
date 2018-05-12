@@ -1,18 +1,20 @@
 {% load menu_tags %}
 {% load cms_tags %}
 
-<div class="row">
+<div class="row mb-4">
   {% for child in children %}
     
     <div class="col-sm-4">
-      <div class="card">
+      <div class="shadow card product-card">
         {% show_placeholder "main_image" child.id %}
         <div class="card-body">
           <h5 class="card-title">{{ child.get_menu_title }}</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          {% show_placeholder "product_desc" child.id as desc %}
+          <p class="card-text">{{ desc|truncatechars:40 }}</p>
           <a href="{{ child.get_absolute_url }}" class="btn btn-primary">Zobacz</a>
         </div>
       </div>
-    </div>  
+    </div>
+    
   {% endfor %}
 </div>
