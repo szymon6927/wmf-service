@@ -196,7 +196,8 @@ MIGRATION_MODULES = {
 }
 
 DJANGOCMS_PICTURE_TEMPLATES = [
-    ('card', 'Card Background')
+    ('card', 'Card Background'),
+    ('slide', 'Slider Template')
 ]
 
 DJANGOCMS_FORMS_WIDGET_CSS_CLASSES = {'__all__': ('form-control', ) }
