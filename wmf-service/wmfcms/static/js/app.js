@@ -30,3 +30,19 @@ $(window).bind("load", function () {
     .scroll(positionFooter)
     .resize(positionFooter)
 });
+
+
+$(document).ready(function() {
+  $('').carousel()
+  $('.carousel .carousel-item').first().addClass('active');
+  // $('.slider-wrapper').slick({
+  //   centerMode:true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   dots: true,
+  //   infinite: true,
+  //   cssEase: 'linear',
+  //   variableWidth: true,
+  //   variableHeight: true
+  // });
+})
