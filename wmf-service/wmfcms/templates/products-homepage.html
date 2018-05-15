@@ -1,0 +1,24 @@
+{% load menu_tags %} {% load cms_tags %}
+
+<div class="row mb-4">
+  {% for child in children %}
+
+  <div class="col-sm-6">
+    <div class="feature boxed">
+      <div class="text-center">
+        <div class="image-tile hover-tile text-center">
+          {% show_placeholder "main_image" child.id %}
+          <div class="hover-state">
+            <a href="{{ child.get_absolute_url }}">
+              <h3 class="uppercase mb8">{{ child.get_menu_title }}</h3>
+            </a>
+          </div>
+        </div>
+        {% show_placeholder "product_desc" child.id as desc %}
+        <h4 class="mar-bot">{{ desc|truncatechars:40 }}</h4>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
+</div>
