@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load cms_tags %}
+{% load menu_tags %}
 
 {% block title %}{% page_attribute "page_title" %}{% endblock title %}
 
@@ -7,11 +8,30 @@
     
 {% include "slider.html" %}
 
+
+{% comment %}
+
+{% show_breadcrumb %}
+{% show_menu_below_id "sprzedaz" %}
+
+{% endcomment %}
+
+<section class="main-desc mb-4">
     <div class="container">
-        <div class="jumbotron">
-            {% placeholder "feature" %}
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1">
+                <div class="text-center">
+                    {% placeholder "desc-at-homepage" %}
+                </div>
+            </div>
         </div>
-    
+    </div>
+</section>
+
+<div class="container">
+        <h2 class="text-center">Nasza oferta</h2>
+        {% show_menu_below_id "products" 0 1 1 1  "products-homepage.html" %}
+        
         <div>
             {% placeholder "content" %}
         </div>
