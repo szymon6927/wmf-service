@@ -19,7 +19,7 @@
 <section class="main-desc mb-4">
     <div class="container">
         <div class="row">
-            <div class="col-sm-10 offset-sm-1">
+            <div class="col-md-12 col-sm-12">
                 <div class="text-center">
                     {% placeholder "desc-at-homepage" %}
                 </div>
@@ -29,11 +29,15 @@
 </section>
 
 <div class="container">
-        <h2 class="text-center mb-4">Nasza oferta</h2>
-        {% show_menu_below_id "products" 0 1 1 1  "products-homepage.html" %}
-        
-        <div>
-            {% placeholder "content" %}
-        </div>
-    </div>
+  <h2 class="text-center display-4 mb-4 font-weight-bold">Nasza oferta</h2>
+  {% show_menu_below_id "products" 0 1 1 1 "products-homepage.html" %}
+
+  <div>
+    {% placeholder "content" %}
+  </div>
+
+</div>
+{% include 'adventages.html' %}
+{% include 'contact-cta.html' %}
+
 {% endblock content %}

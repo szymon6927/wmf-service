@@ -2,12 +2,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.navbar {
+    padding: 1.2rem 1rem;
+}
+
 .gallery-standard img {
     width: 100%;
 }
 
 .navbar-nav li {
-    padding: 0 15px;
+    padding: 0 20px;
     transition: 0.25s;
 }
 
@@ -30,6 +34,7 @@ body {
 
 .content {
     font-size: 1.1rem;
+    /*margin: 3rem 0;*/
 }
 
 .errorlist {
@@ -73,7 +78,7 @@ footer {
 }
 
 .product-card:hover {
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
 }
 
 .product-title {
@@ -181,7 +186,7 @@ footer {
     width: 50%;
 }
 
-.main-desc {
+.main-desc, .contact-cta-section {
     padding: 42px 0;
     box-shadow: inset 0 -5px 15px -1px rgba(50, 50, 50, 0.5);
     background: linear-gradient(to right, rgb(236, 233, 230), rgb(255, 255, 255));
@@ -212,4 +217,36 @@ footer {
 .see-more {
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.product-price {
+    font-size: 24px;
+}
+
+.cta-contact input, .cta-contact button {
+    line-height: 3.5;
+}
+
+#adventages {
+    background: url('/static/img/bg-cropped-2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#adventages .wrapper {
+    padding: 2rem 0;
+    border-radius: 10px;
+    background: rgba(34,34,34,.4);
+    color: #fff;
+}
+
+.service-box h3 {
+    font-weight: 400;
+}
+
+#adventages .wrapper h2 {
+    border-bottom: 1px solid #fff;
+    margin: 0 20px;
 }

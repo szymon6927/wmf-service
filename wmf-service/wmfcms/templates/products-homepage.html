@@ -3,21 +3,21 @@
 <div class="row mb-4">
   {% for child in children %}
 
-  <div class="col-sm-3">
+  <div class="col-sm-6 col-xs-12">
     <div class="feature boxed">
       <a class="product-name mt-2" href="{{ child.get_absolute_url }}">
         <div class="text-center">
           <div class="image-tile hover-tile text-center">
             {% show_placeholder "main_image" child.id %}
             <div class="hover-state">
-              <h3 class="mb-0">{{ child.get_menu_title }}</h3>
+              <h3 class="mb-2 mt-3">{{ child.get_menu_title }}</h3>
             </div>
           </div>
           {% show_placeholder "product_price" child.id as price %}
-          <div class="product-price">
-            {{ price }}
+          <div class="product-price font-weight-bold mb-2">
+            Cena: {{ price }}
           </div>
-          <button class="btn btn-primary see-more mt-2">więcej...</button>
+          <button class="btn btn-primary see-more mt-2">Zobacz więcej...</button>
         </div>
       </a>
     </div>
