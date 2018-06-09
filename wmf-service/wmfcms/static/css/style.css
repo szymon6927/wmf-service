@@ -250,3 +250,81 @@ footer {
     border-bottom: 1px solid #fff;
     margin: 0 20px;
 }
+
+.cta-contact .success {
+    text-align: center;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    background: #49b51d;
+    margin-top: 1rem;
+}
+
+.cta-contact .error {
+    text-align: center;
+    color: #ffffff;
+    padding: 0.5rem 0;
+    background: #da1313;
+    margin-top: 1rem;
+}
+
+.module {
+    display: inline-block;
+    line-height: 50px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.module .fas {
+    color: #523d2f;
+}
+
+.navbar .home i {
+    font-size: 22px;
+    color: #fff;
+    padding-right: 5px;
+}
+
+.page-breadcrumbs li {
+    display: inline;
+}
+
+.masthead {
+    background: url('/static/img/page-overlay-cropped.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+.masthead .overlay:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #292929;
+    opacity: 0.3;
+    z-index: 2;
+}
+
+.parallax > .background-image-holder,
+.parallax .slides li > .background-image-holder {
+  height: 100vh;
+  top: -50vh;
+  transition: all 0s ease !important;
+  transition: opacity 0.3s ease !important;
+  -webkit-transform-style: preserve-3d;
+}
+
+/*.overlay:before {*/
+    /*position: absolute;*/
+    /*content: '';*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*background: #292929;*/
+    /*opacity: 0.3;*/
+    /*z-index: 2;*/
+/*}*/
