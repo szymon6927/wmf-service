@@ -11,8 +11,18 @@ body {
 }
 
 .navbar-nav li {
-    padding: 0 20px;
+    padding: 10px 20px;
     transition: 0.25s;
+    margin-right: 5px;
+}
+
+.navbar-nav li:hover {
+    background: #795f4e;
+    border-radius: 5px;
+}
+
+.navbar-nav li a {
+    text-decoration: none;
 }
 
 .p0 {
@@ -238,7 +248,7 @@ footer {
 #adventages .wrapper {
     padding: 2rem 0;
     border-radius: 10px;
-    background: rgba(34,34,34,.4);
+    background: rgba(34, 34, 34, .4);
     color: #fff;
 }
 
@@ -289,12 +299,12 @@ footer {
 }
 
 .masthead {
-    background: url('/static/img/page-overlay-cropped.jpeg');
+    height: 250px;
+    background: url(/static/img/bg-cropped-2.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 150px;
 }
 
 .masthead .overlay:before {
@@ -310,21 +320,32 @@ footer {
 
 .parallax > .background-image-holder,
 .parallax .slides li > .background-image-holder {
-  height: 100vh;
-  top: -50vh;
-  transition: all 0s ease !important;
-  transition: opacity 0.3s ease !important;
-  -webkit-transform-style: preserve-3d;
+    height: 100vh;
+    top: -50vh;
+    transition: all 0s ease !important;
+    transition: opacity 0.3s ease !important;
+    -webkit-transform-style: preserve-3d;
 }
 
-/*.overlay:before {*/
-    /*position: absolute;*/
-    /*content: '';*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*background: #292929;*/
-    /*opacity: 0.3;*/
-    /*z-index: 2;*/
-/*}*/
+.page-breadcrumbs span, .page-breadcrumbs a {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.page-breadcrumbs .separator {
+    padding: 0 10px;
+}
+
+.page-breadcrumbs a {
+    opacity: 0.8;
+}
+
+@media (max-width: 991px) {
+    .navbar-nav li {
+        padding: 5px 20px;
+    }
+}
